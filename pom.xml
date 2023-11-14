@@ -79,7 +79,8 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>3.1.0</version>
+                <!--                <version>3.1.0</version>-->
+                <version>1.6</version>
                 <executions>
                     <execution>
                         <id>xjc</id>
@@ -89,10 +90,10 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <sources>
-                        <source>${project.basedir}/src/main/resources/countries.xsd</source>
-                    </sources>
-                    <!--                    <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>-->
+                    <!--                    <sources>-->
+                    <!--                        <source>${project.basedir}/src/main/resources/countries.xsd</source>-->
+                    <!--                    </sources>-->
+                    <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
                     <clearOutputDir>false</clearOutputDir>
                 </configuration>

@@ -32,7 +32,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new SimpleXsdSchema(new ClassPathResource("countries.xsd"));
     }
 
-    @Bean(name = "countries")
+    @Bean
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema schema) {
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setSchema(schema);
